@@ -17,7 +17,7 @@ struct TaskView: View {
         NavigationStack {
             ZStack {
                 VStack(alignment: .leading) {
-                    Text(Date.now.formatted(date: .complete, time: .omitted))
+                    Text(self.viewModel.currentDate.formatted(.dateTime.year().month(.wide).day().weekday(.wide)))
                         .font(.subheadline)
                         .fontWeight(.bold)
                         .foregroundColor(Color.theme.secondaryText)
@@ -35,10 +35,10 @@ struct TaskView: View {
                 .toolbar {
                     ToolbarItem(placement: .navigation) {
                         HStack {
-                            Text(currentDate.formatted(.dateTime.month(.wide)))
+                            Text(self.viewModel.currentDate.formatted(.dateTime.month(.wide)))
                                 .font(.largeTitle)
                                 .fontWeight(.bold)
-                            Text(" \(currentDate.formatted(.dateTime.year()))")
+                            Text(self.viewModel.currentDate.formatted(.dateTime.year()))
                                 .foregroundColor(Color.theme.secondaryText)
                                 .font(.largeTitle)
                                 .fontWeight(.bold)

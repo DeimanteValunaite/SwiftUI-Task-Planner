@@ -39,14 +39,6 @@ struct TaskSheetView: View {
                             Text("Add")
                                 .foregroundColor(.primary)
                         }
-                        
-//                        Button(action: {
-//                            dismiss()
-//                        }, label: {
-//                            Image(systemName: "x.circle.fill")
-//                                .foregroundColor(.secondary)
-//                        })
-//                        .font(.system(size: 18))
                     }
                     
                     Spacer()
@@ -60,7 +52,6 @@ struct TaskSheetView: View {
                         .font(.body)
                         .frame(height: 35)
                         .background(.secondary)
-                    //    .background(Color.primary.opacity(0.2))
                         .foregroundColor(Color.secondaryText)
                         .cornerRadius(6)
                     

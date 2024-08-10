@@ -60,7 +60,6 @@ struct WeekHeaderView: View {
                             Rectangle()
                                 .fill(.accent)
                         )
-              //          .padding()
                         
                         Divider()
                             .overlay(.primary)
